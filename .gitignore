@@ -3,3 +3,6 @@
 
 # Node.js files
 node_modules
+
+# Learning AngularJS source files
+source
