@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="my_app">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Scope and Template</title>
+</head>
+
+<body>
+    <div ng-controller="live_test">
+        <span>value_a: </span><input type="number" ng-model="value_a" /><br />
+        <span>value_b: </span><input type="number" ng-model="value_b" /><br />
+        <hr />
+        <span>Expression: {{value_a}} + {{value_b}}</span><br />
+        <span>Live expression: {{value_a + value_b}}</span><br />
+        <hr />
+        <input type="button" ng-click="calc_val()" value="Click to add {{value_a}} and {{value_b}}"/><br />
+        <span>Clicked expression value: {{value_clicked}}</span>
+    </div>
+
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/scope_template.js"></script>
+</body>
+
+</html>
