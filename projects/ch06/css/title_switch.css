@@ -1,0 +1,23 @@
+.small {
+    background-color: lightgrey;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.large {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: 6px black ridge;
+    font-size: 24pt;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

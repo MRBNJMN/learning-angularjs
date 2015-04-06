@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="title_switch">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS ng-include</title>
+    <link href="css/title_switch.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div ng-controller="title_switch_ctrl">
+        <a ng-click="which_title='small.html'">Small</a><br />
+        <a ng-click="which_title='large.html'">Large</a><br />
+        <div ng-include="which_title"></div>
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/title_switch.js"></script>
+</body>
+</html>
