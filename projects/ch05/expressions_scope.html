@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="expressions_scope">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>AngularJS Expressions</title>
+    <link href="css/expressions_scope.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div ng-controller="trans">
+        <span>Directly accessing scope variables:</span><br />
+        {{speed + " " + vehicle}}<br />
+        <hr />
+        <span>Calling functions in the scope:</span><br />
+        {{lower(speed) + " " + upper(vehicle)}}<br />
+        <hr />
+        <a ng-click="set_values('Fast', vehicle)">Change {{vehicle}} speed to fast</a><br />
+        <hr />
+        <a ng-click="set_values(speed, 'Rocket')">Change vehicle to Rocket</a><br />
+        <hr />
+        <a ng-click="vehicle = 'Car'">Change vehicle to Car</a><br />
+        <hr />
+        <a ng-click="vehicle = 'Enhanced ' + vehicle">Enhance {{vehicle}}</a><br />
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/expressions_scope.js"></script>
+</body>
+</html>

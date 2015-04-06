@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="expressions_javascript">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div ng-controller="array_manipulation">
+        <span>Active array (size {{active_array.length}} max {{active_array_max}}):</span><br />
+        {{active_array}}<br />
+        <button ng-click="generate()">Generate</button>
+        <button ng-click="remove()">Remove</button><br />
+        <hr />
+        <span>Removed array (size {{remove_array.length}} max {{remove_array_max}})</span><br />
+        {{remove_array}}
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/expressions_javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="filter_sort">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Sorting and Filtering</title>
+    <link href="css/filter_sort.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div ng-controller="plane_sort">
+        <input type="text" ng-model="filter_string" />
+        <input type="button" ng-click="set_filter()" value="Filter" />
+        <table>
+            <tr>
+                <th ng-click="set_sort('make')">Make</th>
+                <th ng-click="set_sort('model')">Model</th>
+                <th ng-click="set_sort('capacity')">Capacity</th>
+            </tr>
+            <tr ng-repeat="plane in filtered_planes | orderBy:column:reverse">
+                <td>{{plane.make}}</td>
+                <td>{{plane.model}}</td>
+                <td>{{plane.capacity}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/filter_sort.js"></script>
+</body>
+</html>

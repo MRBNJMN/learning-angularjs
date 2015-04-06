@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="scope_hierarchy">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Scope Hierarchy</title>
+</head>
+
+<body>
+    <div ng-controller="level_A">
+        <input type="number" ng-model="level_A_num" /><br />
+        <span>Level A: {{level_A_num}}</span>
+        <hr />
+        <div ng-controller="level_B">
+            <input type="number" ng-model="level_B_num" /><br />
+            <span>Level A: {{level_A_num}}</span><br />
+            <span>Level B: {{level_B_num}}</span>
+            <hr />
+            <div ng-controller="level_C">
+                <input type="number" ng-model="level_C_num" /><br />
+                <span>Level A: {{level_A_num}}</span><br />
+                <span>Level B: {{level_B_num}}</span><br />
+                <span>Level C: {{level_C_num}}</span>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/scope_hierarchy.js"></script>
+</body>
+</html>
