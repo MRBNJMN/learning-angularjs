@@ -1,0 +1,17 @@
+* {
+    text-align: center;
+}
+
+.titleBar {
+    color: white;
+    background-color: blue;
+    font: bold 14px/18px arial;
+    display: block;
+}
+
+.footer {
+    color: white;
+    background-color: blue;
+    font: italic 8px/12px arial;
+    display: block;
+}

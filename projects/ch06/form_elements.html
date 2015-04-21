@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="form_elements">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Form Directives</title>
+</head>
+<body>
+    <div ng-controller="form_elements_ctrl">
+        <input type="text" ng-model="form_text" placeholder="Type here!"/> {{form_text}}
+        <hr />
+        <input type="checkbox" ng-model="form_checkbox" ng-true-value="Checked!" ng-false-value="Not so checked!" />
+        {{form_checkbox}}
+        <hr />
+        <input type="radio" ng-model="form_radio" value="First!" /> First!<br/>
+        <input type="radio" ng-model="form_radio" value="Second!" ng-selected="true" /> Second!<br/>
+        Current: {{form_radio}}
+        <hr />
+        <select ng-model="camera" ng-options="c.model group by c.make for c in cameras"></select><br />
+        {{camera|json}}
+    </div>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/form_elements.js"></script>
+</body>
+</html>

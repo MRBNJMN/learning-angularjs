@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="directive_focus_events">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Focus Event Directives</title>
+</head>
+<body>
+    <div ng-controller="directive_focus_events_cont">
+        <h2>Focus Event Directives</h2>
+        <span>Input 1:</span><br />
+        <input type="text" ng-blur="focusLost($event, 'input1')" ng-focus="focusGained('input1')" /><br />
+        <span>Input 2:</span><br />
+        <input type="text" ng-blur="focusLost($event, 'input2')" ng-focus="focusGained('input2')" />
+        <hr />
+        <span>Input Data: {{inputData | json}}</span>
+    </div>
+    
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="js/directive_focus_events.js"></script>
+</body>
+</html>

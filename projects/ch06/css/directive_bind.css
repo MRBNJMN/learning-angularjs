@@ -1,0 +1,13 @@
+.even {
+    background-color: lightgrey;
+}
+
+.rect {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+}
+
+label:hover, input:hover {
+    cursor: pointer;
+}

@@ -34,7 +34,7 @@ filter_sort.controller("plane_sort", ["$scope", "strongFilter", function($scope,
 
 filter_sort.filter('strong', function() {
     return function(planes_ref, filter_string_ref) {
-        if (filter_string_ref !== "") {
+        if (filter_string_ref) {
             for (var i = 0; i < planes_ref.length; i++) {
                 for (var key in planes_ref[i]) {
                     var value = planes_ref[i][key];
