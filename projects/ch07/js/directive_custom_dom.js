@@ -16,7 +16,7 @@ directive_custom_dom.directive('mybox', function() {
             '<span class="titleBar">{{title}}</span>' +
             '<div ng-transclude></div>' +
             '</div>',
-        link: function(scope, elem, attr, controller, transclude) {
+        link: function(scope, elem) {
             elem.append('<span class="footer">' + scope.$parent.title + '</span>');
             elem.css('border', '2px ridge black');
             elem.css('display', 'inline-block');
