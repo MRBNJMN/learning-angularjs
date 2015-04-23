@@ -1,0 +1,17 @@
+.shrink-add, .grow-add {
+    -webkit-transition: all ease 0.25s;
+    -moz-transition: all ease 0.25s;
+    -o-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+}
+
+.shrink,
+.shrink-add.shrink-add-active {
+    width: 0px;
+}
+
+.start-class,
+.grow,
+.grow-add.grow-add-active {
+    width: 400px;
+}

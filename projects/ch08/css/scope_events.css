@@ -1,0 +1,45 @@
+span {
+    display: inline-block;
+    
+    text-align: center;
+    background-color: blue;
+    
+    width: 100px;
+    
+    padding: 3px;
+    
+    font: bold 18px/22px Georgia;
+    color: white;
+    
+    border: 3px ridge;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+
+    width: 50px;
+    
+    padding: 2px;
+    margin: 5px 10px;
+    
+    font: 15px bold;
+}
+
+.lList {
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 130px;
+}
+
+.cInfo {
+    display: inline-block;
+    
+    width: 175px;
+    
+    padding: 3px;
+    
+    border: 3px blue ridge;
+}

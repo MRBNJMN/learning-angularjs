@@ -1,0 +1,5 @@
+span {
+    color:red; cursor: pointer; }
+.myList {
+    display: inline-block; width: 200px;
+    vertical-align: top; }
